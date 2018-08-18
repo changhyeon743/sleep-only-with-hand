@@ -7,14 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		782A81C3212814D70073BC28 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782A81C2212814D70073BC28 /* API.swift */; };
+		782A81C5212814F20073BC28 /* UploadAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782A81C4212814F20073BC28 /* UploadAPI.swift */; };
 		78D6509421280376007048F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D6509321280376007048F4 /* AppDelegate.swift */; };
 		78D6509621280376007048F4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D6509521280376007048F4 /* ViewController.swift */; };
 		78D6509921280376007048F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78D6509721280376007048F4 /* Main.storyboard */; };
 		78D6509B21280378007048F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78D6509A21280378007048F4 /* Assets.xcassets */; };
 		78D6509E21280378007048F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78D6509C21280378007048F4 /* LaunchScreen.storyboard */; };
+		AD277B25EF3F10AE63958C89 /* Pods_sleep_only_with_hand.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF60E9DC2890990F05956B88 /* Pods_sleep_only_with_hand.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		70645575E58DCC7DCAD8542E /* Pods-sleep-only-with-hand.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sleep-only-with-hand.release.xcconfig"; path = "Pods/Target Support Files/Pods-sleep-only-with-hand/Pods-sleep-only-with-hand.release.xcconfig"; sourceTree = "<group>"; };
+		782A81C2212814D70073BC28 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		782A81C4212814F20073BC28 /* UploadAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadAPI.swift; sourceTree = "<group>"; };
 		78D6509021280375007048F4 /* sleep-only-with-hand.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "sleep-only-with-hand.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		78D6509321280376007048F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		78D6509521280376007048F4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +28,8 @@
 		78D6509A21280378007048F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		78D6509D21280378007048F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		78D6509F21280378007048F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF60E9DC2890990F05956B88 /* Pods_sleep_only_with_hand.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sleep_only_with_hand.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E18AD105191F332A0996D33A /* Pods-sleep-only-with-hand.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sleep-only-with-hand.debug.xcconfig"; path = "Pods/Target Support Files/Pods-sleep-only-with-hand/Pods-sleep-only-with-hand.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +37,46 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD277B25EF3F10AE63958C89 /* Pods_sleep_only_with_hand.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2354A157C7EDF9F885AB9541 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DF60E9DC2890990F05956B88 /* Pods_sleep_only_with_hand.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3DB606CAB245C1E02F480E2A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E18AD105191F332A0996D33A /* Pods-sleep-only-with-hand.debug.xcconfig */,
+				70645575E58DCC7DCAD8542E /* Pods-sleep-only-with-hand.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		782A81C1212814C90073BC28 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				782A81C2212814D70073BC28 /* API.swift */,
+				782A81C4212814F20073BC28 /* UploadAPI.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
 		78D6508721280375007048F4 = {
 			isa = PBXGroup;
 			children = (
 				78D6509221280375007048F4 /* sleep-only-with-hand */,
 				78D6509121280375007048F4 /* Products */,
+				3DB606CAB245C1E02F480E2A /* Pods */,
+				2354A157C7EDF9F885AB9541 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +91,7 @@
 		78D6509221280375007048F4 /* sleep-only-with-hand */ = {
 			isa = PBXGroup;
 			children = (
+				782A81C1212814C90073BC28 /* API */,
 				78D6509321280376007048F4 /* AppDelegate.swift */,
 				78D6509521280376007048F4 /* ViewController.swift */,
 				78D6509721280376007048F4 /* Main.storyboard */,
@@ -71,9 +109,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 78D650A221280378007048F4 /* Build configuration list for PBXNativeTarget "sleep-only-with-hand" */;
 			buildPhases = (
+				259FAD10D8EF994705DF672A /* [CP] Check Pods Manifest.lock */,
 				78D6508C21280375007048F4 /* Sources */,
 				78D6508D21280375007048F4 /* Frameworks */,
 				78D6508E21280375007048F4 /* Resources */,
+				545318A4923A27B31905C126 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,12 +170,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		259FAD10D8EF994705DF672A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-sleep-only-with-hand-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		545318A4923A27B31905C126 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-sleep-only-with-hand/Pods-sleep-only-with-hand-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Pickle/Pickle.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/libwebp/libwebp.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Pickle.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/libwebp.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-sleep-only-with-hand/Pods-sleep-only-with-hand-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		78D6508C21280375007048F4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				782A81C5212814F20073BC28 /* UploadAPI.swift in Sources */,
 				78D6509621280376007048F4 /* ViewController.swift in Sources */,
+				782A81C3212814D70073BC28 /* API.swift in Sources */,
 				78D6509421280376007048F4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -278,15 +367,13 @@
 		};
 		78D650A321280378007048F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E18AD105191F332A0996D33A /* Pods-sleep-only-with-hand.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A358VZ5QEA;
 				INFOPLIST_FILE = "sleep-only-with-hand/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "changhyeon.sleep-only-with-hand";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -296,15 +383,13 @@
 		};
 		78D650A421280378007048F4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70645575E58DCC7DCAD8542E /* Pods-sleep-only-with-hand.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A358VZ5QEA;
 				INFOPLIST_FILE = "sleep-only-with-hand/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "changhyeon.sleep-only-with-hand";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
