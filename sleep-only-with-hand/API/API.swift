@@ -8,6 +8,12 @@
 
 import Foundation
 
+let baseURL = "http://aws.soylatte.kr:3000/"
+
 class API {
+    static let uploadAPI = UploadAPI()
+    static let userAPI = UserAPI()
+    static let loveAPI = LoveAPI()
+    static let partnerAPI = PartnerAPI()
     
 }
